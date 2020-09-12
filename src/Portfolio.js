@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioCard from './PortfolioCard';
+import './Portfolio.sass';
 
 class Portfolio extends Component {
   state = {
@@ -49,15 +50,17 @@ class Portfolio extends Component {
       />
     )
     return (
-      <section id="portfolio">
-          <div className="header">
-              <h2>Portfolio</h2>
-          </div>
-          <div className="grid"> 
-            { cards }
-          </div>
-          <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
-      </section>
+      <header>
+        <section id="portfolio">
+            <div className="header">
+                <h2>Portfolio</h2>
+            </div>
+            <div className="grid"> 
+              { cards }
+            </div>
+            <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
+        </section>
+      </header>
     );
   }
 }

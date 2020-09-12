@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed')
-$bgcolor-1: #eee
-$bgcolor-2: #3e3e3e
-$color-1: black
-$color-2: white
+@import shared.sass
 body
     margin: 0
     font-family: 'Roboto Condensed', sans-serif
@@ -57,32 +54,6 @@ footer#main-footer
     h3
         font-size: 2rem
         margin-bottom: 0
-#portfolio
-    background: $bgcolor-1
-    text-align: center
-    .card
-        position: relative
-        background: $bgcolor-2
-        color: $color-2
-        margin: 10px
-        border: 1px solid $bgcolor-2
-        display: flex
-        flex-direction: column
-        overflow: hidden
-        .card-content
-            flex-grow: 1
-            display: flex
-            flex-flow: column
-            h3
-                background: #303030
-            p
-                padding: 5px
-        img
-            object-fit: cover
-            height: 200px
-            transition: transform .5s
-            &:hover
-                transform: scale(1.5)
 
 .ver-align
     display: flex
@@ -99,34 +70,10 @@ footer#main-footer
     font-size: 1.2em
     a
         text-decoration: none
-.github-link
-    position: absolute
-    display: block
-    background: url('/images/github-logo.svg') no-repeat
-    background-size: 40px 40px
-    height: 40px
-    width: 40px
-    right: 0
-    bottom: 0
-    padding: 5px
 
 @media(min-width: 700px)
     header#portfolio
         display: flex
         height: 100%
-    .grid
-        display: grid
-        // grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr
-        grid-template-columns: repeat(12, 1fr) 
-    .card
-        grid-column: span 6
-    #landing-text
-        flex-direction: row
     .btn
         padding: 1rem 3rem
-@media(min-width: 1100px)
-    .card
-        grid-column: span 4
-@media(min-width: 1400px)
-    .card
-        grid-column: span 3

@@ -1,4 +1,5 @@
 import React from 'react';
+import './PortfolioCard.sass'
 
 const PortfolioCard = ({title, description, imageLocation, imageAlt, githubLink}) => {
     return (
