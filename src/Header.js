@@ -17,7 +17,7 @@ const Header = () => {
                 <div id="landing-text-inner">
                     <h1>Krzysztof Ruczkowski</h1>
                     <h2>Software engineer / student</h2>
-                    <a onClick={handleClick} className="btn" id="view-work"> Zobacz portfolio </a>
+                    <button onClick={handleClick} className="btn" id="view-work"> Zobacz portfolio </button>
                 </div>
             </div>
         </header>
