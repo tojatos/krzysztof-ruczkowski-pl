@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed')
+$bgcolor-1: #eee
+$bgcolor-2: #3e3e3e
+$color-1: black
+$color-2: white
+body
+    margin: 0
+    font-family: 'Roboto Condensed', sans-serif
+    background: $bgcolor-1
+    color: $color-1
+    height: auto
+    font-size: 1.1em
+    line-height: 1.5
+    text-align: center
+    box-sizing: border-box
+h1, h2, h3
+    margin: 0
+    padding: 1em 0
+img
+    display: block
+    width: 100%
+    height: auto
+p
+    margin: 0
+    padding: 1em 0
+main
+    margin: auto
+       
+.btn
+    background: #333
+    color: white
+    padding: 1em 2em
+    border: 1px #ccc solid
+    display: inline-block
+    maring: 2rem 0 0
+    border-radius: 15px
+    text-decoration: none
+    transition: background 500ms ease
+    &:hover
+        background: #555
+.header
+    padding: 1.5rem
+    text-align: center
+    background: #333
+    color: #fff
+    h2
+        border-left: dotted 1px #fff
+        border-right: dotted 1px #fff
+        display: inline-block
+        padding: 0 1rem
+footer#main-footer
+    text-align: center
+    padding: 2rem 1rem
+    margin: auto
+    color: #333
+    border-top: 1px solid black
+    h3
+        font-size: 2rem
+        margin-bottom: 0
+#portfolio
+    background: $bgcolor-1
+    text-align: center
+    .card
+        position: relative
+        background: $bgcolor-2
+        color: $color-2
+        margin: 10px
+        border: 1px solid $bgcolor-2
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        .card-content
+            flex-grow: 1
+            display: flex
+            flex-flow: column
+            h3
+                background: #303030
+            p
+                padding: 5px
+        img
+            object-fit: cover
+            height: 200px
+            transition: transform .5s
+            &:hover
+                transform: scale(1.5)
+
+.ver-align
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    >*
+        display: block
+        margin: 0
+.and-more
+    background: white
+    border-top: 1px solid black
+    padding: 10px
+    font-size: 1.2em
+    a
+        text-decoration: none
+.github-link
+    position: absolute
+    display: block
+    background: url('/images/github-logo.svg') no-repeat
+    background-size: 40px 40px
+    height: 40px
+    width: 40px
+    right: 0
+    bottom: 0
+    padding: 5px
+
+@media(min-width: 700px)
+    header#portfolio
+        display: flex
+        height: 100%
+    .grid
+        display: grid
+        // grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr
+        grid-template-columns: repeat(12, 1fr) 
+    .card
+        grid-column: span 6
+    #landing-text
+        flex-direction: row
+    .btn
+        padding: 1rem 3rem
+@media(min-width: 1100px)
+    .card
+        grid-column: span 4
+@media(min-width: 1400px)
+    .card
+        grid-column: span 3
