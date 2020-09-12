@@ -10,7 +10,9 @@ const PortfolioCard = ({title, description, imageLocation, imageAlt, githubLink}
                     <p>{description}</p>
                 </span>
             </div>
-            <img src={imageLocation} alt={imageAlt} />
+            <div className="img-container">
+                <img src={imageLocation} alt={imageAlt} />
+            </div>
             { githubLink ? <a href={githubLink} target="_blank" rel="noopener noreferrer"><i className="github-link"></i></a> : ""}
         </div>
 )}
