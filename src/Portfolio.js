@@ -51,7 +51,7 @@ class Portfolio extends Component {
     )
     return (
       <header>
-        <section id="portfolio">
+        <section id="portfolio" name="portfolio">
             <div className="header">
                 <h2>Portfolio</h2>
             </div>
