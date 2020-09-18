@@ -42,6 +42,7 @@ class Portfolio extends Component {
         description: 'Prosta gra RPG',
         imageLocation: '/images/simple_rpg.png',
         imageAlt: 'zdjęcie gry Simple RPG',
+        githubLink: 'https://github.com/tojatos/SimpleRPG2',
       },
     ]
   }
