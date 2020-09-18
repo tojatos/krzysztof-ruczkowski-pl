@@ -44,6 +44,14 @@ class Portfolio extends Component {
         imageAlt: 'zdjęcie gry Simple RPG',
         githubLink: 'https://github.com/tojatos/SimpleRPG2',
       },
+      {
+        id: 6,
+        title: 'Portfolio',
+        description: 'Moja strona z portfolio',
+        imageLocation: '/images/portfolio.png',
+        imageAlt: 'zdjęcie strony z portfolio',
+        githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
+      },
     ]
   }
   render() {
