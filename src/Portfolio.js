@@ -5,7 +5,7 @@ import './Portfolio.sass';
 class Portfolio extends Component {
   state = {
     cards: [
-      { 
+      {
         id: 1,
         title: 'NKM',
         description: 'Turowa gra strategiczna na heksagonalnej mapie.',
@@ -13,7 +13,7 @@ class Portfolio extends Component {
         imageAlt: 'zdjęcie gry NKM',
         githubLink: 'https://github.com/tojatos/NKM',
       },
-      { 
+      {
         id: 2,
         title: 'Młodzi ratownicy',
         description: 'Witryna ta jest responsywną aplikacją, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
@@ -21,7 +21,7 @@ class Portfolio extends Component {
         imageAlt: 'zdjęcie strony młodzi ratownicy',
         githubLink: 'https://github.com/tojatos/DesignThinking',
       },
-      { 
+      {
         id: 3,
         title: 'iOP',
         description: 'Witryna ta jest responsywną aplikacją pozwalającą na dodawanie, przeglądanie i filtrowanie wydarzeń w Opolu. Została napisana na hackathonie PiastCode.',
@@ -29,12 +29,19 @@ class Portfolio extends Component {
         imageAlt: 'zdjęcie strony iOP',
         githubLink: 'https://github.com/tojatos/PiastCode',
       },
-      { 
+      {
         id: 4,
         title: 'iOP',
         description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
         imageLocation: '/images/PopcornRush.png',
         imageAlt: 'zdjęcie gry Popcorn Rush',
+      },
+      {
+        id: 5,
+        title: 'Simple RPG',
+        description: 'Prosta gra RPG',
+        imageLocation: '/images/simple_rpg.png',
+        imageAlt: 'zdjęcie gry Simple RPG',
       },
     ]
   }
