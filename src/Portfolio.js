@@ -31,7 +31,7 @@ class Portfolio extends Component {
       },
       {
         id: 4,
-        title: 'iOP',
+        title: 'Popcorn Rush',
         description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
         imageLocation: '/images/PopcornRush.png',
         imageAlt: 'zdjęcie gry Popcorn Rush',
