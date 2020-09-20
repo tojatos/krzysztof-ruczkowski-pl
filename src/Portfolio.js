@@ -91,33 +91,33 @@ class Portfolio extends Component {
         c.description.toLowerCase().includes(searchedText) ||
         c.title.toLowerCase().includes(searchedText) ||
         c.tags.map(t => t.toLowerCase()).includes(searchedText);
-      this.setState({ cards: initialState.cards.filter(searchPredicate)})
+      this.setState({ cards: initialState.cards.filter(searchPredicate) })
     };
     return (
-      <header>
+      <div>
         <section id="portfolio" name="portfolio">
-            <div className="header">
-                <h2>Portfolio</h2>
-                <SearchBar placeholderText="&#xF002; Szukaj" onChange={onSearchChange}/>
-            </div>
-            <div className="grid">
-              {
-                this.state.cards?.length ?
+          <div className="header">
+            <h2>Portfolio</h2>
+            <SearchBar placeholderText="&#xF002; Szukaj" onChange={onSearchChange} />
+          </div>
+          <div className="grid">
+            {
+              this.state.cards?.length ?
                 this.state.cards.map(card =>
-                <PortfolioCard
-                  key={card.id}
-                  title={card.title}
-                  description={card.description}
-                  imageLocation={card.imageLocation}
-                  imageAlt={card.imageAlt}
-                  githubLink={card.githubLink}
-                  tags={card.tags}
-                />) : <div className="not-found">Nie znaleziono :(</div>
-              }
-            </div>
-            <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
+                  <PortfolioCard
+                    key={card.id}
+                    title={card.title}
+                    description={card.description}
+                    imageLocation={card.imageLocation}
+                    imageAlt={card.imageAlt}
+                    githubLink={card.githubLink}
+                    tags={card.tags}
+                  />) : <div className="not-found">Nie znaleziono :(</div>
+            }
+          </div>
         </section>
-      </header>
+        <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
+      </div>
     );
   }
 }
