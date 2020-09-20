@@ -12,6 +12,10 @@ class Portfolio extends Component {
         imageLocation: '/images/NKM.png',
         imageAlt: 'zdjęcie gry NKM',
         githubLink: 'https://github.com/tojatos/NKM',
+        tags: [
+          "C#",
+          "Unity",
+        ],
       },
       {
         id: 2,
@@ -20,6 +24,11 @@ class Portfolio extends Component {
         imageLocation: '/images/ratownicy.png',
         imageAlt: 'zdjęcie strony młodzi ratownicy',
         githubLink: 'https://github.com/tojatos/DesignThinking',
+        tags: [
+          "PHP",
+          "CodeIgniter",
+          "JavaScript",
+        ],
       },
       {
         id: 3,
@@ -28,6 +37,11 @@ class Portfolio extends Component {
         imageLocation: '/images/iOP.png',
         imageAlt: 'zdjęcie strony iOP',
         githubLink: 'https://github.com/tojatos/PiastCode',
+        tags: [
+          "PHP",
+          "CodeIgniter",
+          "JavaScript",
+        ],
       },
       {
         id: 4,
@@ -35,6 +49,10 @@ class Portfolio extends Component {
         description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
         imageLocation: '/images/PopcornRush.png',
         imageAlt: 'zdjęcie gry Popcorn Rush',
+        tags: [
+          "C#",
+          "Unity",
+        ],
       },
       {
         id: 5,
@@ -43,6 +61,10 @@ class Portfolio extends Component {
         imageLocation: '/images/simple_rpg.png',
         imageAlt: 'zdjęcie gry Simple RPG',
         githubLink: 'https://github.com/tojatos/SimpleRPG2',
+        tags: [
+          "Java",
+          "JavaFX",
+        ],
       },
       {
         id: 6,
@@ -51,6 +73,10 @@ class Portfolio extends Component {
         imageLocation: '/images/portfolio.png',
         imageAlt: 'zdjęcie strony z portfolio',
         githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
+        tags: [
+          "JavaScript",
+          "React",
+        ],
       },
     ]
   }
@@ -63,6 +89,7 @@ class Portfolio extends Component {
         imageLocation={card.imageLocation}
         imageAlt={card.imageAlt}
         githubLink={card.githubLink}
+        tags={card.tags}
       />
     )
     return (
