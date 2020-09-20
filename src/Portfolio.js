@@ -102,6 +102,7 @@ class Portfolio extends Component {
             </div>
             <div className="grid">
               {
+                this.state.cards?.length ?
                 this.state.cards.map(card =>
                 <PortfolioCard
                   key={card.id}
@@ -111,7 +112,7 @@ class Portfolio extends Component {
                   imageAlt={card.imageAlt}
                   githubLink={card.githubLink}
                   tags={card.tags}
-                />)
+                />) : <div className="not-found">Nie znaleziono :(</div>
               }
             </div>
             <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
