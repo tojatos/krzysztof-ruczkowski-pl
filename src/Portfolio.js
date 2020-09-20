@@ -71,7 +71,7 @@ const initialState =
       id: 6,
       title: 'Portfolio',
       description: 'Moja strona z portfolio',
-      imageLocation: '/images/portfolio.png',
+      imageLocation: '/images/portfolio2.png',
       imageAlt: 'zdjęcie strony z portfolio',
       githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
       tags: [
