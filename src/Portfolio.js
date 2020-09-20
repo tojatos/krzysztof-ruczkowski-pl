@@ -3,11 +3,10 @@ import PortfolioCard from './PortfolioCard';
 import SearchBar from './SearchBar';
 import './Portfolio.sass';
 
-const initialState =
+let initialState =
 {
   cards: [
     {
-      id: 1,
       title: 'NKM',
       description: 'Turowa gra strategiczna na heksagonalnej mapie.',
       imageLocation: '/images/NKM.png',
@@ -19,7 +18,6 @@ const initialState =
       ],
     },
     {
-      id: 2,
       title: 'Młodzi ratownicy',
       description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
       imageLocation: '/images/ratownicy.png',
@@ -32,7 +30,6 @@ const initialState =
       ],
     },
     {
-      id: 3,
       title: 'iOP',
       description: 'Witryna pozwalająca na dodawanie, przeglądanie i filtrowanie wydarzeń w Opolu. Została napisana na hackathonie PiastCode.',
       imageLocation: '/images/iOP.png',
@@ -45,7 +42,6 @@ const initialState =
       ],
     },
     {
-      id: 4,
       title: 'Popcorn Rush',
       description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
       imageLocation: '/images/PopcornRush.png',
@@ -56,7 +52,6 @@ const initialState =
       ],
     },
     {
-      id: 5,
       title: 'Simple RPG',
       description: 'Prosta gra RPG',
       imageLocation: '/images/simple_rpg.png',
@@ -68,7 +63,6 @@ const initialState =
       ],
     },
     {
-      id: 6,
       title: 'Portfolio',
       description: 'Moja strona z portfolio',
       imageLocation: '/images/portfolio2.png',
@@ -81,6 +75,9 @@ const initialState =
     },
   ]
 };
+
+// add ids
+initialState.cards.forEach((card, index) => card.id = index + 1);
 
 class Portfolio extends Component {
   state = initialState;
