@@ -21,7 +21,7 @@ const initialState =
     {
       id: 2,
       title: 'Młodzi ratownicy',
-      description: 'Witryna ta jest responsywną aplikacją, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
+      description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
       imageLocation: '/images/ratownicy.png',
       imageAlt: 'zdjęcie strony młodzi ratownicy',
       githubLink: 'https://github.com/tojatos/DesignThinking',
@@ -34,7 +34,7 @@ const initialState =
     {
       id: 3,
       title: 'iOP',
-      description: 'Witryna ta jest responsywną aplikacją pozwalającą na dodawanie, przeglądanie i filtrowanie wydarzeń w Opolu. Została napisana na hackathonie PiastCode.',
+      description: 'Witryna pozwalająca na dodawanie, przeglądanie i filtrowanie wydarzeń w Opolu. Została napisana na hackathonie PiastCode.',
       imageLocation: '/images/iOP.png',
       imageAlt: 'zdjęcie strony iOP',
       githubLink: 'https://github.com/tojatos/PiastCode',
