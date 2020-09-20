@@ -18,6 +18,28 @@ let initialState =
       ],
     },
     {
+      title: 'Portfolio',
+      description: 'Moja strona z portfolio',
+      imageLocation: '/images/portfolio2.png',
+      imageAlt: 'zdjęcie strony z portfolio',
+      githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
+      tags: [
+        "JavaScript",
+        "React",
+      ],
+    },
+    {
+      title: 'Simple RPG',
+      description: 'Prosta gra RPG',
+      imageLocation: '/images/simple_rpg.png',
+      imageAlt: 'zdjęcie gry Simple RPG',
+      githubLink: 'https://github.com/tojatos/SimpleRPG2',
+      tags: [
+        "Java",
+        "JavaFX",
+      ],
+    },
+    {
       title: 'Młodzi ratownicy',
       description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
       imageLocation: '/images/ratownicy.png',
@@ -49,28 +71,6 @@ let initialState =
       tags: [
         "C#",
         "Unity",
-      ],
-    },
-    {
-      title: 'Simple RPG',
-      description: 'Prosta gra RPG',
-      imageLocation: '/images/simple_rpg.png',
-      imageAlt: 'zdjęcie gry Simple RPG',
-      githubLink: 'https://github.com/tojatos/SimpleRPG2',
-      tags: [
-        "Java",
-        "JavaFX",
-      ],
-    },
-    {
-      title: 'Portfolio',
-      description: 'Moja strona z portfolio',
-      imageLocation: '/images/portfolio2.png',
-      imageAlt: 'zdjęcie strony z portfolio',
-      githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
-      tags: [
-        "JavaScript",
-        "React",
       ],
     },
   ]
