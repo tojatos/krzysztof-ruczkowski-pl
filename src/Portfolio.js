@@ -29,14 +29,15 @@ let initialState =
       ],
     },
     {
-      title: 'Simple RPG',
-      description: 'Prosta gra RPG',
-      imageLocation: '/images/simple_rpg.png',
-      imageAlt: 'zdjęcie gry Simple RPG',
-      githubLink: 'https://github.com/tojatos/SimpleRPG2',
+      title: 'NKM Actor Server',
+      description: 'Nowy backend do gry NKM, napisany w Scali. (WIP)',
+      imageLocation: '/images/nkm_actor_server.png',
+      imageAlt: 'zdjęcie kodu NKM Actor Server',
+      githubLink: 'https://github.com/tojatos/NKMActorServer',
       tags: [
-        "Java",
-        "JavaFX",
+        "Scala",
+        "Akka",
+        "Docker",
       ],
     },
     {
@@ -49,6 +50,17 @@ let initialState =
         "PHP",
         "CodeIgniter",
         "JavaScript",
+      ],
+    },
+    {
+      title: 'Simple RPG',
+      description: 'Prosta gra RPG',
+      imageLocation: '/images/simple_rpg.png',
+      imageAlt: 'zdjęcie gry Simple RPG',
+      githubLink: 'https://github.com/tojatos/SimpleRPG2',
+      tags: [
+        "Java",
+        "JavaFX",
       ],
     },
     {
