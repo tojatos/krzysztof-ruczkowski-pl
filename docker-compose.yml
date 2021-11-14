@@ -1,6 +1,7 @@
 version: '3.9'
 services:
   krzysztof-ruczkowski-pl:
+    restart: always
     build:
       context: .
     networks:
