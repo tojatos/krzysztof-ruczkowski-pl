@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  krzysztof-ruczkowski-pl:
+    build:
+      context: .
+    networks:
+      - web
+      - default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.krzysztof-ruczkowski-pl.rule=Host(`krzysztofruczkowski.pl`)"
+      - "traefik.http.routers.krzysztof-ruczkowski-pl.tls=true"
+      - "traefik.http.routers.krzysztof-ruczkowski-pl.tls.certresolver=myresolver"
+      - "traefik.http.services.krzysztof-ruczkowski-pl.loadbalancer.server.port=80"
+      - "traefik.docker.network=traefik_default"
+
+networks:
+  web:
+    name: traefik_default
+    external: true
