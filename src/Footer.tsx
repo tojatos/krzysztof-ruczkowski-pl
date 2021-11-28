@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.sass';
 
-const Footer = ({myEmail}) => {
+const Footer = ({myEmail} : {myEmail: string}) => {
     return (
         <footer id="main-footer">
             <h3>Skontaktuj się ze mną</h3>

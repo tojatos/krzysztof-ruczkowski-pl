@@ -3,8 +3,8 @@ import './Header.sass';
 
 const Header = () => {
     const handleClick = () => {
-        var Scroll   = require('react-scroll');
-        var scroller = Scroll.scroller;
+        const Scroll = require('react-scroll');
+        const scroller = Scroll.scroller;
         scroller.scrollTo('portfolio', {
             duration: 700,
             smooth: 'easeOutCubic',
