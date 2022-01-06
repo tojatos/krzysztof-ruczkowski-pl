@@ -31,6 +31,19 @@ let initialState: InitialState =
           ],
         },
         {
+          title: 'Laser Tactics',
+          description: 'Gra webowa oparta na Laserowych Szachach. Moją częścią pracy był backend modułu gry.',
+          imageLocation: '/images/laser_tactics.png',
+          imageAlt: 'zdjęcie strony laser tactics',
+          githubLink: 'https://github.com/tojatos/laser-tactics',
+          tags: [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Locust",
+          ],
+        },
+        {
           title: 'Portfolio',
           description: 'Moja strona z portfolio',
           imageLocation: '/images/portfolio2.png',
