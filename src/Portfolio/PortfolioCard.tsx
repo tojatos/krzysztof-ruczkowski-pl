@@ -1,14 +1,6 @@
 import React from 'react';
 import './PortfolioCard.sass'
-
-interface Card {
-    title: string
-    description: string
-    imageLocation: string
-    imageAlt: string
-    githubLink: string | undefined
-    tags: string[]
-}
+import {Card} from "./models/Card";
 
 const PortfolioCard = (card: Card) => {
     return (
@@ -23,6 +15,7 @@ const PortfolioCard = (card: Card) => {
                 <img src={card.imageLocation} alt={card.imageAlt} />
             </div>
             { card.githubLink ? <a href={card.githubLink} target="_blank" rel="noopener noreferrer"><i className="github-link"/></a> : ""}
+            { card.year ? <div><span className="year">{card.year}</span></div> : ""}
         </div>
 )}
 
