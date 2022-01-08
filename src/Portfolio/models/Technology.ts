@@ -1,0 +1,16 @@
+export enum Technology {
+    CSharp = "CSharp",
+    Unity = "Unity",
+    Python = "Python",
+    Codecov = "Codecov",
+    Postgresql = "Postgresql",
+    Mysql = "Mysql",
+    Scala = "Scala",
+    Codeigniter = "Codeigniter",
+    Javascript = "Javascript",
+    Typescript = "Typescript",
+    React = "React",
+    Docker = "Docker",
+    Php = "Php",
+    Java = "Java",
+}

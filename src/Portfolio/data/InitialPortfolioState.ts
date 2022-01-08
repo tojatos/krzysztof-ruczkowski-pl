@@ -1,4 +1,5 @@
 import {PortfolioState} from "../models/PortfolioState";
+import {Technology} from "../models/Technology";
 
 export const initialPortfolioState: PortfolioState =
     {
@@ -14,6 +15,10 @@ export const initialPortfolioState: PortfolioState =
                     "Unity",
                 ],
                 year: "2016-2020",
+                technologies: [
+                    Technology.CSharp,
+                    Technology.Unity,
+                ],
             },
             {
                 title: 'Laser Tactics',
@@ -26,8 +31,14 @@ export const initialPortfolioState: PortfolioState =
                     "FastAPI",
                     "PostgreSQL",
                     "Locust",
+                    "Docker",
                 ],
                 year: 2021,
+                technologies: [
+                    Technology.Python,
+                    Technology.Postgresql,
+                    Technology.Docker,
+                ],
             },
             {
                 title: 'Portfolio',
@@ -36,10 +47,16 @@ export const initialPortfolioState: PortfolioState =
                 imageAlt: 'zdjęcie strony z portfolio',
                 githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
                 tags: [
-                    "JavaScript",
+                    "TypeScript",
                     "React",
+                    "Docker",
                 ],
                 year: "2021-2022",
+                technologies: [
+                    Technology.Typescript,
+                    Technology.React,
+                    Technology.Docker,
+                ],
             },
             {
                 title: 'NKM Actor Server',
@@ -53,19 +70,10 @@ export const initialPortfolioState: PortfolioState =
                     "Docker",
                 ],
                 year: 2021,
-            },
-            {
-                title: 'Młodzi ratownicy',
-                description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
-                imageLocation: '/images/ratownicy.png',
-                imageAlt: 'zdjęcie strony młodzi ratownicy',
-                githubLink: 'https://github.com/tojatos/DesignThinking',
-                tags: [
-                    "PHP",
-                    "CodeIgniter",
-                    "JavaScript",
+                technologies: [
+                    Technology.Scala,
+                    Technology.Docker,
                 ],
-                year: 2017,
             },
             {
                 title: 'Simple RPG',
@@ -78,6 +86,43 @@ export const initialPortfolioState: PortfolioState =
                     "JavaFX",
                 ],
                 year: 2019,
+                technologies: [Technology.Java],
+            },
+            {
+                title: 'Popcorn Rush',
+                description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
+                imageLocation: '/images/PopcornRush.png',
+                imageAlt: 'zdjęcie gry Popcorn Rush',
+                tags: [
+                    "C#",
+                    "Unity",
+                ],
+                githubLink: undefined,
+                year: 2018,
+                technologies: [
+                    Technology.CSharp,
+                    Technology.Unity,
+                ],
+            },
+            {
+                title: 'Młodzi ratownicy',
+                description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
+                imageLocation: '/images/ratownicy.png',
+                imageAlt: 'zdjęcie strony młodzi ratownicy',
+                githubLink: 'https://github.com/tojatos/DesignThinking',
+                tags: [
+                    "PHP",
+                    "CodeIgniter",
+                    "JavaScript",
+                    "Docker",
+                ],
+                year: 2017,
+                technologies: [
+                    Technology.Php,
+                    Technology.Codeigniter,
+                    Technology.Javascript,
+                    Technology.Docker,
+                ],
             },
             {
                 title: 'iOP',
@@ -91,18 +136,11 @@ export const initialPortfolioState: PortfolioState =
                     "JavaScript",
                 ],
                 year: 2017,
-            },
-            {
-                title: 'Popcorn Rush',
-                description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
-                imageLocation: '/images/PopcornRush.png',
-                imageAlt: 'zdjęcie gry Popcorn Rush',
-                tags: [
-                    "C#",
-                    "Unity",
+                technologies: [
+                    Technology.Php,
+                    Technology.Codeigniter,
+                    Technology.Javascript,
                 ],
-                githubLink: undefined,
-                year: 2018,
             },
         ]
     };

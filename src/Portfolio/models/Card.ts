@@ -1,3 +1,5 @@
+import {Technology} from "./Technology";
+
 export interface Card {
     title: string
     description: string
@@ -6,4 +8,5 @@ export interface Card {
     githubLink: string | undefined
     tags: string[]
     year: string | number | undefined
+    technologies: Technology[] | undefined
 }
