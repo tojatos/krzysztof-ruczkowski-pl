@@ -19,9 +19,18 @@ import {
 import {Technology} from "./models/Technology";
 
 // use own redux-original icon, as the one from react-devicons is broken
-import { ReactComponent as ReduxOriginalIcon } from "../redux-original.svg";
+import { ReactComponent as ReduxOriginalIcon } from "../icons/redux-original.svg";
 
-const techIconSize = "2em";
+import { ReactComponent as FastApiIcon } from "../icons/fastapi.svg";
+import { ReactComponent as SeleniumIcon } from "../icons/selenium.svg";
+import { ReactComponent as AkkaIcon } from "../icons/akka.svg";
+import LocustImage from "../icons/locust.png";
+
+
+const techIconSize = "35px";
+
+const LocustIcon = (props?: React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>) =>
+    <img src={LocustImage} alt={"Locust"} {...props}/>;
 
 const technologyToIconWithSizeAndTooltip = (technology: Technology, size: string) => {
     const icon = technologyToIcon(technology)
@@ -46,6 +55,10 @@ const technologyToIcon = (technology: Technology) => {
         case Technology.Java: return <JavaOriginalIcon/>;
         case Technology.Django: return <DjangoOriginalIcon/>;
         case Technology.Redux: return <ReduxOriginalIcon/>;
+        case Technology.FastAPI: return <FastApiIcon/>;
+        case Technology.Locust: return <LocustIcon/>;
+        case Technology.Selenium: return <SeleniumIcon/>;
+        case Technology.Akka: return <AkkaIcon/>;
     }
 }
 

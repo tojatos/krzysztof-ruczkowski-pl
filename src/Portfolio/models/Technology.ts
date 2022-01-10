@@ -15,4 +15,8 @@ export enum Technology {
     Java = "Java",
     Django = "Django",
     Redux = "Redux",
+    FastAPI = "FastAPI",
+    Locust = "Locust",
+    Selenium = "Selenium",
+    Akka = "Akka",
 }

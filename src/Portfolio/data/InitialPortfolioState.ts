@@ -35,12 +35,16 @@ export const initialPortfolioState: PortfolioState =
                     "PostgreSQL",
                     "Locust",
                     "Docker",
+                    "CodeCov",
                 ],
                 year: 2021,
                 technologies: [
                     Technology.Python,
                     Technology.Postgresql,
                     Technology.Docker,
+                    Technology.FastAPI,
+                    Technology.Locust,
+                    Technology.Codecov,
                 ],
             },
             {
@@ -88,6 +92,7 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Python,
                     Technology.Django,
                     Technology.Redux,
+                    Technology.Selenium,
                 ],
             },
             {
@@ -107,6 +112,7 @@ export const initialPortfolioState: PortfolioState =
                 technologies: [
                     Technology.Scala,
                     Technology.Docker,
+                    Technology.Akka,
                 ],
             },
             {
