@@ -1,6 +1,4 @@
 import React from 'react';
-import './PortfolioCard.sass'
-import {Card} from "./Card";
 import {
     CodecovPlainIcon,
     CodeigniterPlainIcon,
@@ -25,7 +23,6 @@ import { ReactComponent as FastApiIcon } from "../../icons/fastapi.svg";
 import { ReactComponent as SeleniumIcon } from "../../icons/selenium.svg";
 import { ReactComponent as AkkaIcon } from "../../icons/akka.svg";
 import LocustImage from "../../icons/locust.png";
-import exp from "constants";
 
 const techIconSize = "35px";
 

@@ -167,6 +167,7 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Codeigniter,
                     Technology.Javascript,
                     Technology.Docker,
+                    Technology.Mysql,
                 ],
             },
             {
@@ -182,12 +183,14 @@ export const initialPortfolioState: PortfolioState =
                     "PHP",
                     "CodeIgniter",
                     "JavaScript",
+                    "Mysql",
                 ],
                 year: 2017,
                 technologies: [
                     Technology.Php,
                     Technology.Codeigniter,
                     Technology.Javascript,
+                    Technology.Mysql,
                 ],
             },
         ]
