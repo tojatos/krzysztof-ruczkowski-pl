@@ -4,7 +4,7 @@ import {Card} from "./models/Card";
 import {
     CodecovPlainIcon,
     CodeigniterPlainIcon,
-    CsharpOriginalIcon,
+    CsharpOriginalIcon, DjangoOriginalIcon,
     DockerOriginalIcon, JavaOriginalIcon,
     JavascriptOriginalIcon,
     MysqlOriginalIcon,
@@ -42,6 +42,7 @@ const technologyToIcon = (technology: Technology) => {
         case Technology.Docker: return <DockerOriginalIcon/>;
         case Technology.Php: return <PhpOriginalIcon/>;
         case Technology.Java: return <JavaOriginalIcon/>;
+        case Technology.Django: return <DjangoOriginalIcon/>;
     }
 }
 

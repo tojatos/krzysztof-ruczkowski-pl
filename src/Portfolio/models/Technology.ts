@@ -13,4 +13,5 @@ export enum Technology {
     Docker = "Docker",
     Php = "PHP",
     Java = "Java",
+    Django = "Django",
 }
