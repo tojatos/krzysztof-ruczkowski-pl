@@ -17,6 +17,7 @@ import {
     UnityOriginalIcon
 } from "react-devicons";
 import {Technology} from "./models/Technology";
+import FadeIn from 'react-fade-in';
 
 const techIconSize = "2em";
 
@@ -62,8 +63,8 @@ const PortfolioCard = (card: Card) => {
                 <div className="tech-icons">
                     {card.technologies.map(t => <span key={t}>{technologyToIconWithSizeAndTooltip(t, techIconSize)}</span>)}
                 </div>
-            : ""}
+                : ""}
         </div>
-)}
+    )}
 
 export default PortfolioCard;
