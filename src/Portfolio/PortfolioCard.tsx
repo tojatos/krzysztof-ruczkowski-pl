@@ -20,9 +20,9 @@ import {Technology} from "./models/Technology";
 
 const techIconSize = "2em";
 
-const technologyToIconWithSize = (technology: Technology, size: string) => {
+const technologyToIconWithSizeAndTooltip = (technology: Technology, size: string) => {
     const icon = technologyToIcon(technology)
-    return React.cloneElement(icon, {size: size})
+    return React.cloneElement(icon, {size: size, "data-tip": technology, "data-effect": "solid"})
 }
 
 const technologyToIcon = (technology: Technology) => {
@@ -60,7 +60,7 @@ const PortfolioCard = (card: Card) => {
             { card.year ? <div><span className="year">{card.year}</span></div> : ""}
             { card.technologies ?
                 <div className="tech-icons">
-                    {card.technologies.map(t => <span key={t}>{technologyToIconWithSize(t, techIconSize)}</span>)}
+                    {card.technologies.map(t => <span key={t}>{technologyToIconWithSizeAndTooltip(t, techIconSize)}</span>)}
                 </div>
             : ""}
         </div>
