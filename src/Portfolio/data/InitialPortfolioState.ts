@@ -77,6 +77,7 @@ export const initialPortfolioState: PortfolioState =
                     "Selenium",
                     "Python",
                     "Django",
+                    "Redux",
                     "django-rest-framework",
                 ],
                 year: "2020-2021",
@@ -86,6 +87,7 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Docker,
                     Technology.Python,
                     Technology.Django,
+                    Technology.Redux,
                 ],
             },
             {

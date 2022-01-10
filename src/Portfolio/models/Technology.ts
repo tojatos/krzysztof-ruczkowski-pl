@@ -14,4 +14,5 @@ export enum Technology {
     Php = "PHP",
     Java = "Java",
     Django = "Django",
+    Redux = "Redux",
 }

@@ -17,13 +17,15 @@ import {
     UnityOriginalIcon
 } from "react-devicons";
 import {Technology} from "./models/Technology";
-import FadeIn from 'react-fade-in';
+
+// use own redux-original icon, as the one from react-devicons is broken
+import { ReactComponent as ReduxOriginalIcon } from "../redux-original.svg";
 
 const techIconSize = "2em";
 
 const technologyToIconWithSizeAndTooltip = (technology: Technology, size: string) => {
     const icon = technologyToIcon(technology)
-    return React.cloneElement(icon, {size: size, "data-tip": technology, "data-effect": "solid"})
+    return React.cloneElement(icon, {size: size, width: size, height: size, "data-tip": technology, "data-effect": "solid"})
 }
 
 const technologyToIcon = (technology: Technology) => {
@@ -43,6 +45,7 @@ const technologyToIcon = (technology: Technology) => {
         case Technology.Php: return <PhpOriginalIcon/>;
         case Technology.Java: return <JavaOriginalIcon/>;
         case Technology.Django: return <DjangoOriginalIcon/>;
+        case Technology.Redux: return <ReduxOriginalIcon/>;
     }
 }
 
