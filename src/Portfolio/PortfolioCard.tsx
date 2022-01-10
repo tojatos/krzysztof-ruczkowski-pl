@@ -18,6 +18,13 @@ import {
 } from "react-devicons";
 import {Technology} from "./models/Technology";
 
+const techIconSize = "2em";
+
+const technologyToIconWithSize = (technology: Technology, size: string) => {
+    const icon = technologyToIcon(technology)
+    return React.cloneElement(icon, {size: size})
+}
+
 const technologyToIcon = (technology: Technology) => {
     switch (technology) {
         case Technology.CSharp: return <CsharpOriginalIcon/>;
@@ -53,7 +60,7 @@ const PortfolioCard = (card: Card) => {
             { card.year ? <div><span className="year">{card.year}</span></div> : ""}
             { card.technologies ?
                 <div className="tech-icons">
-                    {card.technologies.map(t => <span key={t}>{technologyToIcon(t)}</span>)}
+                    {card.technologies.map(t => <span key={t}>{technologyToIconWithSize(t, techIconSize)}</span>)}
                 </div>
             : ""}
         </div>
