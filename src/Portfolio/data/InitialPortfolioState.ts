@@ -6,9 +6,10 @@ export const initialPortfolioState: PortfolioState =
         cards: [
             {
                 title: 'NKM',
-                description: 'Turowa gra strategiczna na heksagonalnej mapie.',
+                description: 'Turn based strategy game on a hexagonal map.',
+                detailedDescription: 'Turn based strategy game on a hexagonal map.',
                 imageLocation: '/images/NKM.png',
-                imageAlt: 'zdjęcie gry NKM',
+                imageAlt: 'NKM game',
                 githubLink: 'https://github.com/tojatos/NKM',
                 tags: [
                     "C#",
@@ -22,7 +23,9 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'Laser Tactics',
-                description: 'Gra webowa oparta na Laserowych Szachach. Moją częścią pracy był backend modułu gry.',
+                description: 'Web game based on Laser Chess. I worked on a game module backend.',
+                detailedDescription: 'Web game based on Laser Chess. I worked on a game module backend.\n' +
+                    'The game is based on websockets.',
                 imageLocation: '/images/laser_tactics.png',
                 imageAlt: 'zdjęcie strony laser tactics',
                 githubLink: 'https://github.com/tojatos/laser-tactics',
@@ -42,7 +45,8 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'Portfolio',
-                description: 'Moja strona z portfolio',
+                description: 'My website with portfolio.',
+                detailedDescription: 'My website with portfolio.',
                 imageLocation: '/images/portfolio2.png',
                 imageAlt: 'zdjęcie strony z portfolio',
                 githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
@@ -60,7 +64,9 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'NKM Actor Server',
-                description: 'Nowy backend do gry NKM, napisany w Scali. (WIP)',
+                description: 'A new backend for the NKM game, written in Scala. (WiP)',
+                detailedDescription: 'A new backend for the NKM game, written in Scala.\n' +
+                    'It uses Akka framework with Akka Persistence.',
                 imageLocation: '/images/nkm_actor_server.png',
                 imageAlt: 'zdjęcie kodu NKM Actor Server',
                 githubLink: 'https://github.com/tojatos/NKMActorServer',
@@ -77,7 +83,9 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'Simple RPG',
-                description: 'Prosta gra RPG',
+                description: 'A very simple RPG game written in JavaFX.',
+                detailedDescription: 'A very simple RPG game written in JavaFX.\n' +
+                    'The purpose of this project was to pass an university course by creating a project that showcases many design patterns.',
                 imageLocation: '/images/simple_rpg.png',
                 imageAlt: 'zdjęcie gry Simple RPG',
                 githubLink: 'https://github.com/tojatos/SimpleRPG2',
@@ -90,7 +98,9 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'Popcorn Rush',
-                description: 'Gra mobilna, w której zbieramy kukurydzę i robimy z niej popcorn.',
+                description: 'Mobile game, where you collect popcorn and make popcorn out of it.',
+                detailedDescription: 'Mobile game, where you collect popcorn and make popcorn out of it.\n' +
+                    'Made during remote internship with Strangelet Studio.',
                 imageLocation: '/images/PopcornRush.png',
                 imageAlt: 'zdjęcie gry Popcorn Rush',
                 tags: [
@@ -106,7 +116,8 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'Młodzi ratownicy',
-                description: 'Witryna, dzięki której można się wiele nauczyć na temat pierwszej pomocy, a następnie przejść specjalny kurs i odebrać certyfikat Młodego Ratownika.',
+                description: 'Website where you can learn about first aid, pass an exam and receive a certificate.',
+                detailedDescription: 'Website where you can learn about first aid, pass an exam and receive a certificate.',
                 imageLocation: '/images/ratownicy.png',
                 imageAlt: 'zdjęcie strony młodzi ratownicy',
                 githubLink: 'https://github.com/tojatos/DesignThinking',
@@ -126,7 +137,10 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'iOP',
-                description: 'Witryna pozwalająca na dodawanie, przeglądanie i filtrowanie wydarzeń w Opolu. Została napisana na hackathonie PiastCode.',
+                description: 'Website where you can manage events in Opole.\n' +
+                    'Written on the PiastCode hackhathon.',
+                detailedDescription: 'Website where you can manage events in Opole.\n' +
+                    'Written on the PiastCode hackhathon.',
                 imageLocation: '/images/iOP.png',
                 imageAlt: 'zdjęcie strony iOP',
                 githubLink: 'https://github.com/tojatos/PiastCode',

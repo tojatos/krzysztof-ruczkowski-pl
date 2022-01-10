@@ -3,6 +3,7 @@ import {Technology} from "./Technology";
 export interface Card {
     title: string
     description: string
+    detailedDescription: string
     imageLocation: string
     imageAlt: string
     githubLink: string | undefined

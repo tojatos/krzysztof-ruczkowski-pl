@@ -34,7 +34,7 @@ class Portfolio extends Component {
               }
             </div>
           </section>
-          <div className="and-more">... i wiele więcej, do obejrzenia na <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">githubie</a></div>
+          <div className="and-more">... and you can find more code on my <a href="https://github.com/tojatos" target="_blank" rel="noopener noreferrer">github</a></div>
         </div>
     );
   }
