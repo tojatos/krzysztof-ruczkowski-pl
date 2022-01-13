@@ -88,11 +88,11 @@ export const initialPortfolioState: PortfolioState =
                 technologies: [
                     Technology.Typescript,
                     Technology.React,
-                    Technology.Docker,
+                    Technology.Redux,
                     Technology.Python,
                     Technology.Django,
-                    Technology.Redux,
                     Technology.Selenium,
+                    Technology.Docker,
                 ],
             },
             {
@@ -113,6 +113,27 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Scala,
                     Technology.Docker,
                     Technology.Akka,
+                ],
+            },
+            {
+                title: 'edu-cl-mail front',
+                description: 'A better alternative for the university internal mailbox.',
+                detailedDescription: 'A better alternative for the university internal mailbox.',
+                imageLocation: '/images/edu_cl_mail.png',
+                imageAlt: 'Edu.cl front website',
+                githubLink: 'https://github.com/tojatos/edu-cl-mail-front',
+                tags: [
+                    "JavaScript",
+                    "React",
+                    "Redux",
+                    "Docker",
+                ],
+                year: 2020,
+                technologies: [
+                    Technology.Typescript,
+                    Technology.React,
+                    Technology.Redux,
+                    Technology.Docker,
                 ],
             },
             {
