@@ -73,7 +73,7 @@ export const initialPortfolioState: PortfolioState =
                     'Includes backend API in django-rest-framework, frontend in React, Selenium tests and a scraper.',
                 imageLocation: '/images/got_pttk.png',
                 imageAlt: 'GOT PTTK website',
-                githubLink: 'https://github.com/tojatos/krzysztof-ruczkowski-pl',
+                githubLink: 'https://github.com/tojatos/got-pttk',
                 tags: [
                     "TypeScript",
                     "React",
