@@ -22,7 +22,7 @@ class Portfolio extends Component {
           <section id="portfolio">
             <div className="header">
               <h2>Portfolio</h2>
-              <SearchBar placeholderText="&#xF002; Szukaj" onChange={onSearchChange} />
+              <SearchBar placeholderText="&#xF002; Search" onChange={onSearchChange} />
             </div>
             <div>
                 <FadeIn className="grid">
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                             <PortfolioCard
                                 key={card.title}
                                 {...card}
-                            />) : <div className="not-found">Nie znaleziono :(</div>
+                            />) : <div className="not-found">Not found :(</div>
                   }
                 </FadeIn>
             </div>
