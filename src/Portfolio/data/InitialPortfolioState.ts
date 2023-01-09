@@ -5,20 +5,44 @@ export const initialPortfolioState: PortfolioState =
     {
         cards: [
             {
-                title: 'NKM',
-                description: 'Turn based strategy game on a hexagonal map.',
-                detailedDescription: 'Turn based strategy game on a hexagonal map.',
-                imageLocation: '/images/NKM.png',
-                imageAlt: 'NKM game',
-                githubLink: 'https://github.com/tojatos/NKM',
+                title: 'nkm-server',
+                description: 'A new backend for the NKM game, written using functional programming.',
+                detailedDescription: 'A new backend for the NKM game, written in Scala.\n' +
+                    'It uses Akka framework with Akka Persistence.',
+                imageLocation: '/images/nkm-server.png',
+                imageAlt: 'nkm-server code',
+                githubLink: 'https://github.com/nkm-game/nkm-server',
                 tags: [
-                    "C#",
-                    "Unity",
+                    "Scala",
+                    "Akka",
+                    "Docker",
                 ],
-                year: "2016-2020",
+                year: "2021-2023",
                 technologies: [
-                    Technology.CSharp,
-                    Technology.Unity,
+                    Technology.Scala,
+                    Technology.Docker,
+                    Technology.Akka,
+                ],
+            },
+            {
+                title: 'nkm-front',
+                description: 'A webpage with info about the NKM game',
+                detailedDescription: 'A webpage with info about the NKM game',
+                imageLocation: '/images/nkm-front.png',
+                imageAlt: 'nkm-front website',
+                githubLink: 'https://github.com/nkm-game/nkm-front',
+                tags: [
+                    "Typescript",
+                    "React",
+                    "Redux",
+                    "Docker",
+                ],
+                year: "2022-2023",
+                technologies: [
+                    Technology.Typescript,
+                    Technology.React,
+                    Technology.Redux,
+                    Technology.Docker,
                 ],
             },
             {
@@ -45,6 +69,23 @@ export const initialPortfolioState: PortfolioState =
                     Technology.FastAPI,
                     Technology.Locust,
                     Technology.Codecov,
+                ],
+            },
+            {
+                title: 'NKM',
+                description: 'Turn based strategy game on a hexagonal map.',
+                detailedDescription: 'Turn based strategy game on a hexagonal map.',
+                imageLocation: '/images/NKM.png',
+                imageAlt: 'NKM game',
+                githubLink: 'https://github.com/tojatos/NKM',
+                tags: [
+                    "C#",
+                    "Unity",
+                ],
+                year: "2016-2020",
+                technologies: [
+                    Technology.CSharp,
+                    Technology.Unity,
                 ],
             },
             {
@@ -93,26 +134,6 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Django,
                     Technology.Selenium,
                     Technology.Docker,
-                ],
-            },
-            {
-                title: 'NKM Actor Server',
-                description: 'A new backend for the NKM game, written in Scala. (WiP)',
-                detailedDescription: 'A new backend for the NKM game, written in Scala.\n' +
-                    'It uses Akka framework with Akka Persistence.',
-                imageLocation: '/images/nkm_actor_server.png',
-                imageAlt: 'NKM Actor Server code',
-                githubLink: 'https://github.com/tojatos/NKMActorServer',
-                tags: [
-                    "Scala",
-                    "Akka",
-                    "Docker",
-                ],
-                year: 2021,
-                technologies: [
-                    Technology.Scala,
-                    Technology.Docker,
-                    Technology.Akka,
                 ],
             },
             {
