@@ -26,8 +26,8 @@ export const initialPortfolioState: PortfolioState =
             },
             {
                 title: 'nkm-front',
-                description: 'A webpage with info about the NKM game',
-                detailedDescription: 'A webpage with info about the NKM game',
+                description: 'A webpage with info about the NKM game.',
+                detailedDescription: 'A webpage with info about the NKM game.',
                 imageLocation: '/images/nkm-front.png',
                 imageAlt: 'nkm-front website',
                 githubLink: 'https://github.com/nkm-game/nkm-front',
@@ -105,6 +105,24 @@ export const initialPortfolioState: PortfolioState =
                     Technology.Typescript,
                     Technology.React,
                     Technology.Docker,
+                ],
+            },
+            {
+                title: 'Sparkle',
+                description: 'A roguelike game.',
+                detailedDescription: 'A roguelike game I worked on with my university colleague.' +
+                    'We won the game jam.',
+                imageLocation: '/images/sparkle.png',
+                imageAlt: 'sparkle game',
+                githubLink: 'https://smutnacebula.itch.io/sparkle',
+                tags: [
+                    "C#",
+                    "Unity",
+                ],
+                year: "2021",
+                technologies: [
+                    Technology.CSharp,
+                    Technology.Unity,
                 ],
             },
             {
